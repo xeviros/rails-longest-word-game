@@ -11,17 +11,17 @@ class GamesController < ApplicationController
   def score
     @word = params[:query]
     @letters = new.sort
-    @longest_word = longest_word(@word)
+    # @longest_word = longest_word(@word)
   end
 
   def longest_word(word)
-    @array = word.upcase.split('').sort
-    @letters = score
-    if @array.exclude? (@letters)
-      return "Sorry but #{@word} can't be built of #{@letters}"
-    else
-      return "good"
-    end
+    # @array = word.upcase.split('').sort
+    # @letters = score
+    # if @array.exclude? (@letters)
+    #   return "Sorry but #{@word} can't be built of #{@letters}"
+    # else
+    #   return "good"
+    # end
 
 
 
